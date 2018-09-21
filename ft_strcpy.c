@@ -20,27 +20,26 @@
 #include <string.h>
 #include <stdio.h>
 
- char *ft_strcpy(char *dst, const char *src)
- {
-     int i;
+char	*ft_strcpy(char *dst, const char *src)
+{
+	int		i;
 
-     i = 0;
-     while (src[i] != '\0')
-     {
-         dst[i] = src[i];
-         i++;
-     }
-     dst[i] = src[i];
-     return (dst);
- }
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = src[i];
+	return (dst);
+}
+
 /*
 **  int main ()
 ** {
 **     char example[50];
-
 **     ft_strcpy(example, "Life is good!");
 **     printf("%s\n", example);
-
 **     return(0);
 ** }
 */
