@@ -20,12 +20,12 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char *p;
+	unsigned char *p;
 
-	p = (char *)b;
+	p = (unsigned char *)b;
 	while (len > 0)
 	{
-		*p = c;
+		*p = (unsigned char)c;
 		p++;
 		len--;
 	}
@@ -35,7 +35,7 @@ void	*ft_memset(void *b, int c, size_t len)
 /*
 **int main()
 **{
-**	char str[100] = "first function from my first project";
+**	char str[45] = "first function from my first project";
 **
 **	ft_memset(str + 11, '.', 8);
 **	printf("After memset(): %s\n", str);

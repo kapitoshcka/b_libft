@@ -21,25 +21,25 @@
 #include <string.h>
 #include <stdio.h>
 
-char	*ft_strdup(const char *src)
+char	*ft_strdup(const char *s1)
 {
-	char	*dup;
+	char	*d;
 	int		i;
+	int		size;
 
 	i = 0;
-	while (src[i] != '\0')
-		i++;
-	dup = (char *)malloc(i + 1);
-	if (dup == NULL)
-		return (0);
-	i = 0;
-	while (src[i] != '\0')
+	size = 0;
+	while (s1[size] != '\0')
+		size++;
+	if (!(d = (char *)malloc(sizeof(char) * size + 1)))
+		return (NULL);
+	while (s1[i] != '\0')
 	{
-		dup[i] = src[i];
+		d[i] = s1[i];
 		i++;
 	}
-	dup[i] = '\0';
-	return (dup);
+	d[i] = '\0';
+	return (d);
 }
 
 /*

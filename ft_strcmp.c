@@ -39,11 +39,16 @@ int		ft_strcmp(const char *s1, const char *s2)
 **    	char str2[15] = "ABCDEF";
 **    	int result = ft_strcmp(str1, str2);
 ** 	printf("%d\n", result);
-**    	if(result < 0) {
+**    	if(result < 0)
+**		{
 **       	printf("str1 is less than str2");
-**    	} else if(result > 0) {
+**    	}
+**			else if(result > 0)
+**		{
 **       	printf("str2 is less than str1");
-**    	} else {
+**    	}
+**			else
+**		{
 **       	printf("str1 is equal to str2");
 ** 	}
 ** 	return(0);
